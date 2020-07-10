@@ -1,0 +1,73 @@
+.buttons-box {
+  position: absolute !important;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-box_off {
+  display: none;
+}
+
+.button-container {
+  width: 5%;
+  height: 6vh;
+  background: white;
+  border-radius: 10vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.button-container_no:hover {
+  box-shadow: 0.2vmax 0.2vmax 0.2vmax black;
+
+  /* background: #c50e0e; */
+  transform: scale(1.2);
+  animation-name: shaking;
+  animation-duration: 1s;
+}
+
+.button-container_yes:hover {
+  box-shadow: 0.2vmax 0.2vmax 0.2vmax black;
+
+  /* background: #53c76c; */
+  transform: scale(1.2);
+  transform: rotate(360deg);
+}
+
+.button-container__item {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 5vh;
+  cursor: pointer;
+}
+
+.button-container__item_no {
+  background-image: url('images/western.png');
+}
+
+.button-container__item_yes {
+  background-image: url('images/revolver.png');
+}
+
+@keyframes shaking {
+  from {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(90deg);
+  }
+
+  90% {
+    transform: rotate(-90deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}

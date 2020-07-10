@@ -1,0 +1,68 @@
+const characters = [
+  {
+    id: 0,
+    class: 'cart-character__image_bandit',
+    name: 'Bandit',
+    text:
+      'Hey Sheriff, i have an offer for you. You let us rob the bank - we won’t tell your Mayor you were wanted before ..... . So what will you say ?',
+    acceptance: '',
+    positive: { text: 'Good Sheriff, you have made a right choice ...', tribe: 0, folks: 0, law: 10, budget: -20 },
+    negative: { text: 'You will regret this ...', tribe: 0, folks: 0, law: -20, budget: 10 },
+  },
+  {
+    id: 1,
+    class: 'cart-character__image_citizen',
+    name: 'Citizen',
+    text: 'G’morning Sheriff. We need money for making more coffins. Will you share some cash ?',
+    acceptance: '',
+    positive: { text: 'Thank you Sheriff, we will make a special one for you !', tribe: 0, folks: 10, law: 0, budget: -10 },
+    negative: { text: 'One day you will need this ...', tribe: 0, folks: -10, law: 0, budget: 10 },
+  },
+  {
+    id: 2,
+    class: 'cart-character__image_assistant',
+    name: 'Assistant',
+    text: 'Sheriff...sir...a crew from the wild mountains is going to take over the town. We must send a patrol for them.',
+    acceptance: '',
+    positive: { text: 'To horse !', tribe: 0, folks: -10, law: 10, budget: 0 },
+    negative: { text: 'As you wish Sheriff ...', tribe: 0, folks: 0, law: 0, budget: 10 },
+  },
+  {
+    id: 3,
+    class: 'cart-character__image_indian',
+    name: 'Wild Tempest',
+    text: 'Your people invaded to our lands ! Go away or we will start a war !',
+    acceptance: '',
+    positive: { text: 'Wise choice. Let the spirits be with you', tribe: 20, folks: 0, law: -10, budget: 0 },
+    negative: { text: 'Spirists are with us !', tribe: -40, folks: -10, law: 10, budget: 0 },
+  },
+  {
+    id: 4,
+    class: 'cart-character__image_spirit',
+    name: 'The Spirit',
+    text: 'You will stop the war or i will bring the plague to your town',
+    acceptance: '',
+    positive: { text: 'Wise choice. Let the spirits be with you', tribe: 40, folks: 0, law: -20, budget: 0 },
+    negative: { text: 'Spirists are with us !', tribe: -10, folks: -10, law: -10, budget: -10 },
+  },
+  {
+    id: 5,
+    class: 'cart-character__image_chief',
+    name: 'The Greatest Chief - Mighty Rain',
+    text: 'I can call off the Spirit, but you will need to leave my people alone !',
+    acceptance: '',
+    positive: { text: 'Wise choice. Let the spirits be with you', tribe: 50, folks: 0, law: -50, budget: 0 },
+    negative: { text: 'Spirists are with us !', tribe: -50, folks: 0, law: 50, budget: 0 },
+  },
+  {
+    id: 6,
+    class: 'cart-character__image_rapper',
+    name: 'OG',
+    text: 'What’up nigga ! Support the black people !',
+    acceptance: '',
+    positive: { text: 'You’re good now ... .', tribe: 10, folks: 10, law: 10, budget: 10 },
+    negative: { text: 'Racist !', tribe: -10, folks: -10, law: -10, budget: -10 },
+  },
+];
+
+export default characters;

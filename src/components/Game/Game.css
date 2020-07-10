@@ -1,0 +1,10 @@
+.game-main {
+  background-image: url('images/bg-WildWest.png');
+  background-size: 20vmax;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
